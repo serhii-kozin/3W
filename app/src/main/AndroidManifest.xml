@@ -19,8 +19,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".HomeActivity"
-            android:label="@string/title_name"></activity>
+            android:name=".persone.PersoneActivity"
+            android:label="@string/title_name" />
     </application>
 
 </manifest>

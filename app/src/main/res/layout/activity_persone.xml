@@ -6,7 +6,7 @@
     style="@style/AppTheme"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="www.a3w.HomeActivity">
+    tools:context="www.a3w.persone.PersoneActivity">
 
     <include
         android:id="@+id/toolbar"
@@ -25,7 +25,8 @@
             android:layout_height="wrap_content"
             android:layout_marginRight="@dimen/edit_text_home_margin"
             android:hint="@string/name_persone"
-            android:textSize="@dimen/edit_text_home_size" />
+            android:textSize="@dimen/edit_text_home_size"
+            android:textColorHighlight="@color/colorPrimaryDark"/>
 
         <Button
             android:id="@+id/button_home_type"
@@ -33,14 +34,14 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_marginRight="@dimen/button_home_margin"
-            android:background="@mipmap/ic_type" />
+            android:background="@drawable/button_draweble_person"/>
 
         <Button
             android:id="@+id/button_home_calendar"
             android:layout_width="@dimen/button_home_width"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:background="@mipmap/ic_calendar" />
+            android:background="@drawable/button_draweble_calendar"/>
     </RelativeLayout>
 
 </RelativeLayout>
