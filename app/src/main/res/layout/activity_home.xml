@@ -1,17 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_home"
+    style="@style/AppTheme"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="www.a3w.HomeActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:id="@+id/liner_layout_home"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_below="@+id/toolbar"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edit_text_home_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/edit_text_home_margin"
+            android:hint="@string/name_persone"
+            android:textSize="@dimen/edit_text_home_size" />
+
+        <Button
+            android:id="@+id/button_home_type"
+            android:layout_width="@dimen/button_home_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/button_home_margin"
+            android:background="@mipmap/ic_type" />
+
+        <Button
+            android:id="@+id/button_home_calendar"
+            android:layout_width="@dimen/button_home_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/ic_calendar" />
+    </RelativeLayout>
+
 </RelativeLayout>
